@@ -3,7 +3,22 @@
 // '||' = 'ou'; 
 // push() = 'append()'
 //linha 25, explicação !!!!!!!!!!!!
-//  .map(u => u.imc);
+// (1) .map(u => u.imc);
+// - a funcao map() vai retornar uma nova array; no caso da array user_imcs, para cada item, é definida uma função de transformação sendo ela a 'u => u.imc'
+//  .map() percorre cada elemento do array original e aplica a função de transformação a cada item
+// o .map() retorna o novo array que contém os resultados da transformação para cada elemento do array original, mudando os itens
+
+// exemplo)
+
+// let numeros = [1, 2, 3, 4];
+// let multiplicados = numeros.map(num => num * 2);
+// console.log(multiplicados); // [2, 4, 6, 8]
+
+// -> no coontexto da questao. . . . user_imc contem os elem no formato '{nome: 'nome da pessoa', imc: valor}'
+//  let descobrirMaior = user_imcs.map(u => u.imc); -> é aplicada para acessar apenas o valor do imc & o map cria uma nova array com esse valores
+
+
+/// 
 //  Math.max(...descobrirMaior);
 function maior_imc(user_pesos) {
     let user_imcs = [];
