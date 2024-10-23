@@ -18,8 +18,18 @@
 //  let descobrirMaior = user_imcs.map(u => u.imc); -> é aplicada para acessar apenas o valor do imc & o map cria uma nova array com esse valores
 
 
-/// 
-//  Math.max(...descobrirMaior);
+// Math.max -> descobrir o maior num dentre os presentes; max()
+// (2) Math.max(...descobrirMaior);
+//'...' no (...descobrirMaior) = operador de espalhamento (spread operator);
+// Ele é utilizado para expandir ou "espalhar" elementos de um array ou propriedades de um objeto em um contexto onde múltiplos elementos são esperados.
+
+// exemplo) 
+
+// let numeros = [1, 2, 3, 4, 5];
+// let maior = Math.max(...numeros); // Isso se torna Math.max(1, 2, 3, 4, 5)
+// console.log(maior); // Retorna 5
+
+
 function maior_imc(user_pesos) {
     let user_imcs = [];
     
