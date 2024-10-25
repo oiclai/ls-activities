@@ -52,9 +52,9 @@ function maior_imc(user_pesos) {
     let maior = Math.max(...descobrirMaior); // Encontra o maior IMC
     
     let maioresImcs_user = [];
-    for (let user of user_imcs) { // Corrigido para iterar sobre user_imcs
+    for (let user of user_imcs) { // iterar sobre user_imcs
         if (user.imc >= maior) {
-            maioresImcs_user.push('${user.nome.toUpperCase()} TEM O MAIOR IMC: ${user.imc}');
+            maioresImcs_user.push(`${user.nome.toUpperCase()} TEM O MAIOR IMC: ${user.imc}`);
         }
     }
     
@@ -75,3 +75,4 @@ let maioresImcs_user = maior_imc(user_pesos);
 for (let user of maioresImcs_user) {
     console.log(user);
 }
+// node praticas/atividade-imc.js
