@@ -49,7 +49,7 @@ function maior_imc(user_pesos) {
 
     // bloco: descobrir o maior imc
     let descobrirMaior = user_imcs.map(u => u.imc);
-    let maior = Math.max(...descobrirMaior); // Encontra o maior IMC
+    let maior = Math.max(...descobrirMaior); // encontra o maior IMC
     
     let maioresImcs_user = [];
     for (let user of user_imcs) { // iterar sobre user_imcs
