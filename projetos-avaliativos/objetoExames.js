@@ -25,15 +25,21 @@ class Exam {
         return media;
   }
 
-  min(){
+    min(){
         let notas = this.exams.map(exam => exam.nota); 
         let menorNota = Math.min(...notas); // Math.min para encontrar o menor valor no caso a nota
         return [menorNota]; // mas retorna como um array
   }
 
-  max(){
+    max(){
     let notas = this.exams.map(exam => exam.nota); 
     let maiorNota = Math.max(...notas); // Math.max para encontrar o maior valor no caso a nota
     return [maiorNota];
+}
+    lt(notaBaseComparacao){
+            return this.exams.filter(exam => exam.nota < notaBaseComparacao).map(exam => exam.nota);
+        }
+    gt(notaBaseComparacao){
+        return this.exams.filter(exam => exam.nota > notaBaseComparacao).map(exam => exam.nota);
 }
 }
