@@ -23,23 +23,23 @@ class Exam {
         let media = somaNotas/this.exams.length; 
         media = media.toFixed(1); // 100% opicional mas acho q fica melhor assim
         return media;
-  }
+    }
 
     min(){
-        let notas = this.exams.map(exam => exam.nota); 
+        let notas = this.exams.map(exam => exam.nota); // * recebe cada elemento (exame) da lista filtrada e retorna apenas o valor de exam.grade (a nota do exame) e sim gera um novo array
         let menorNota = Math.min(...notas); // Math.min para encontrar o menor valor no caso a nota
         return [menorNota]; // mas retorna como um array
-  }
-
+    }
     max(){
     let notas = this.exams.map(exam => exam.nota); 
     let maiorNota = Math.max(...notas); // Math.max para encontrar o maior valor no caso a nota
     return [maiorNota];
-}
+    }
+
     lt(notaBaseComparacao){
             return this.exams.filter(exam => exam.nota < notaBaseComparacao).map(exam => exam.nota);
-        }
+    }
     gt(notaBaseComparacao){
         return this.exams.filter(exam => exam.nota > notaBaseComparacao).map(exam => exam.nota);
-}
+    }
 }
