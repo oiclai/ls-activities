@@ -38,3 +38,10 @@ function range (numInicial, numFinal, numPassos){
       array.push(flag);
     }
   }
+function zip (...arguments) {
+  let tamanhoArray = arrayNomes.length; let flag = 0;
+  array = [];
+  for (flag; flag < tamanhoArray; flag++){
+    for ()
+  }
+}
