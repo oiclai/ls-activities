@@ -43,35 +43,3 @@ class Exam {
         return this.exams.filter(exam => exam.nota > notaBaseComparacao).map(exam => exam.nota);
     }
 }
-
-// teste instanciando para ver se funciona:
-
-// Definindo o gabarito e os pesos das questões
-// const gabarito = {
-//     alternativas: {
-//         questao1: 'A',
-//         questao2: 'C',
-//         questao3: 'B',
-//     }
-// };
-
-// const pesos = {
-//     questao1: 2,
-//     questao2: 3,
-//     questao3: 5
-// };
-
-// // Criando a instância do Exame
-// const exame = new Exam(gabarito, pesos);
-
-// // Adicionando exames com alternativas e notas
-// exame.add({ alternativas: { questao1: 'A', questao2: 'C', questao3: 'B' } });
-// exame.add({ alternativas: { questao1: 'B', questao2: 'C', questao3: 'B' } });
-// exame.add({ alternativas: { questao1: 'A', questao2: 'B', questao3: 'B' } });
-
-// // Exibindo a média, menor, maior, e notas de comparação
-// console.log("Média das notas:", exame.avg());  // Média das notas
-// console.log("Menor nota:", exame.min());      // Menor nota
-// console.log("Maior nota:", exame.max());      // Maior nota
-// console.log("Notas menores que 5:", exame.lt(5)); // Notas menores que 5
-// console.log("Notas maiores que 5:", exame.gt(5)); // Notas maiores que 5
