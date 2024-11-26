@@ -19,7 +19,7 @@ app.listen(3000, () => {
     // res.status(200).send("");
 
     // a estrutura da rota é mt parecida
-function buscarPostPorID(req, res) {
+function buscarPostPorID(id) {
     return posts.findIndex((post) => {
         return post.id === Number(id); // se chegar string converte para number, se chegar number n acontece nada
     })
