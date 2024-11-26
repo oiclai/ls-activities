@@ -17,14 +17,17 @@ app.listen(3000, () => {
 // API interface
 // app.get("/api", (req, res) => {
     // res.status(200).send("");
+
+    // a estrutura da rota é mt parecida
 function buscarPostPorID(req, res) {
     return posts.findIndex((post) => {
-        return post.id === Number(id);
+        return post.id === Number(id); // se chegar string converte para number, se chegar number n acontece nada
     })
 }
-
+// dentro de toda req ela tem um objeto chamado params que contem o "id"
 app.get("/posts/:id", (req, res) => { //':id' = substituida por um dado variavel (1,2,3)
-    res.status(200).json(posts);
+    const index = buscarPostPorID(req.params.id); // post é o nosso array, e o id vem do req.params.id
+    res.status(200).json(posts[index]);
 });
 
 // rota do cliente para pegar uma resposta do servidor
