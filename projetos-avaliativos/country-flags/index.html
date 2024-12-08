@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade Flags</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cool-navy': '#001a2c',
+            'dark-navy': '#00111c',
+            'light-grey': '#e9ecef',
+            'cool-grey': '#495057',
+            'link-blue': '#4361ee',
+            'even-lighter-grey': '#d2d7df'
+          }
+        }
+      }
+    }
+</script>
+</head>
+<body class="bg-light-grey text-cool-grey font-sans">
+
+  <header class="bg-cool-navy text-light-grey p-4 text-center">
+    <h1 class="text-2xl font-bold">Flags</h1>
+  </header>
+
+  <main class="container mx-auto p-6">
+    <!-- responsivo -->
+    <div id="flags" class="flags grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+      
+    </div>
+  </main>
+  
+  <footer class="bg-even-lighter-grey text-dark-navy p-4 text-center">
+    <p>Site feito por <a href="https://www.linkedin.com/in/clara-nunes-de-alcantara/" class="no-underline hover:text-link-blue">Clara Alcântara</a> para a Etapa I da disciplina de Linguagem Script</p>
+    <p class="text-sm">&copy; Dados retirados do repositório <a href="https://github.com/hampusborgos/country-flags" class="no-underline hover:text-link-blue">Country Flags</a>.</p>
+  </footer>
+  <script src="./countryFlags.js" type="module"></script>
+</body>
+</html>
