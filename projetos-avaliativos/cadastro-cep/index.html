@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cadastro de Endereço com CEP</title>
+</head>
+<body class="bg-[#e9ecef] flex justify-center items-center min-h-screen">
+
+    <form id="address-form" class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
+        <h1 class="text-2xl font-bold mb-6 text-center text-gray-800">Address</h1>
+
+        <div class="mb-4">
+            <label for="cep" class="block text-gray-700 font-medium mb-2"></label>
+            <input type="text" id="cep" name="cep" maxlength="9" placeholder="Digite o CEP" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="rua" class="block text-gray-700 font-medium mb-2"></label>
+            <input type="text" id="rua" name="rua" placeholder="Rua" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" readonly>
+        </div>
+
+        <div class="mb-4">
+            <label for="numero" class="block text-gray-700 font-medium mb-2"></label>
+            <input type="text" id="numero" name="numero" placeholder="Número" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" readonly>
+        </div>
+
+        <div class="mb-4">
+            <label for="bairro" class="block text-gray-700 font-medium mb-2"></label>
+            <input type="text" id="bairro" name="bairro" placeholder="Bairro" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" readonly>
+        </div>
+
+        <div class="mb-4">
+            <label for="cidade" class="block text-gray-700 font-medium mb-2"></label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" readonly>
+        </div>
+
+        <div class="mb-6">
+            <label for="estado" class="block text-gray-700 font-medium mb-2"></label>
+            <input type="text" id="estado" name="estado" placeholder="Estado" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" readonly>
+        </div>
+
+        <div class="flex justify-center">
+            <button type="button" onclick="blalalallala class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Buscar</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
