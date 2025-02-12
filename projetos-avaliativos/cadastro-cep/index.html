@@ -9,7 +9,15 @@
 <body class="bg-pink-200 flex justify-center items-center min-h-screen">
     <form id="address-form" class="bg-pink-100 p-8 rounded-lg shadow-lg w-full max-w-lg">
         <h1 class="text-2xl font-bold mb-6 text-center text-pink-800">Address</h1>
-
+<!-- 
+require* - obrigatório
+readonly* - somente leitura
+disabled* - desabilitado
+maxlength* - limita a quantidade de caracteres
+minlength* - limita a quantidade de caracteres
+pattern* - expressão regular (util se eu quisesse q o cep so fosse mandado no formato 'xxxxx-xxx' = \d{5}-\d{3})
+type* - tipo de input (ja conhecido)
+-->
         <div class="mb-4">
             <!-- usuario q coloca -->
             <label for="cep" class="block text-pink-700 font-medium mb-2"></label>
