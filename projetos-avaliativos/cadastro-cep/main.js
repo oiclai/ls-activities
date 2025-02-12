@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 function buscarEndereco() {
+    const cep = document.getElementById('cep').value;
+    console.log("CEP capturado:", cep);
+
     if (cep.length !== 8) {
         alert("Por favor, insira um CEP válido com 8 dígitos.");
         return;
@@ -22,7 +25,7 @@ function buscarEndereco() {
 
 // ---------------------------- req -------------------------------
     fetch(url)
-        .then(response => response.json()) // promisse
+        .then(response => response.json()) 
         .then(data => {
             if (data.erro) {
                 alert("CEP não encontrado. Por favor, verifique o CEP informado.");
